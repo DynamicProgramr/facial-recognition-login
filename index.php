@@ -6,6 +6,9 @@
 
 	boilerplate template by: HTML5Up
 	javascript for camera use in browser: webcam-easy, written by Benson Ruan (with edits by me), https://github.com/bensonruan/webcam-easy
+    
+	Version Control (for this file)
+    0.1 - 05/31/2021 : began coding of the website
 -->
 <html>
 	<head>

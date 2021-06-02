@@ -8,7 +8,7 @@ $("#webcam-switch").change(function()
 {
     if(this.checked)
     {
-        $(".md-modal").addClass("md.show");
+        $(".md-modal").addClass("md-show");
         webcam.start()
             .then(result => 
             {
@@ -38,6 +38,15 @@ $("#closeError").click(function()
 {
     $("#webcam-switch").prop("checked", false).change();
 });
+
+function displayError(err = "")
+{
+    if(err != "")
+    {
+        $("#errorMsg").html(err);
+    }
+    $("#errorMsg").removeClass("d-none");
+} // end displayError function
 
 function cameraStarted()
 {
